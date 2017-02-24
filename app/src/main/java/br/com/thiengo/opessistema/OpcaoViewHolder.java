@@ -20,8 +20,6 @@ public class OpcaoViewHolder {
     public void setDados(Opcao opcao){
         tvNome.setText( opcao.getNome() );
 
-        if( opcao.ehStatus() ){
-            cbStatus.setChecked( true );
-        }
+        cbStatus.setChecked( opcao.ehStatus() );
     }
 }
